@@ -20,9 +20,9 @@ public class PersonTests
     [Test]
     public void CreateInCode()
     {
-        var person = new Person { LastName = "Doe" };
+        var person = new Person { FirstName = "John Doe", LastName = "Doe" };
 
-        person.FirstName.Should().BeNull();
+        person.FirstName.Should().NotBeNull();
         person.LastName.Should().NotBeNull();
     }
 }
